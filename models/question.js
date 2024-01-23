@@ -9,6 +9,10 @@ const questionSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  category: {
+    type: String,
+    required: true,
+  },
   questionDate: {
     type: Date,
     required: true,

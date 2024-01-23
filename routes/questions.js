@@ -22,6 +22,7 @@ router.post("/", async (req, res) => {
   const question = new Question({
     name: req.body.name,
     questionedToWeb: req.body.questionedToWeb,
+    category: req.body.category,
   });
   try {
     const newQuestion = await question.save();
